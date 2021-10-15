@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{Component} from "react";
+import web3 from "./web3"
+let acc;
+const run = async ()=> {
+    try {
+    await window.ethereum.request({ method: 'eth_requestAccounts' });
+      acc = await web3.eth.getAccounts();
+      console.log(acc);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+run();
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+    render(){
+        return (
+        <>
+        <h1>{acc}</h1>
+        <h1>sdsd</h1></>)
+    }
 }
 
 export default App;
