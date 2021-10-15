@@ -1,1 +1,1 @@
-# LOTTERY DAPP
+# LOTTERY Dapp
