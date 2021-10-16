@@ -1,6 +1,7 @@
 import React,{Component} from "react";
 import web3 from "./web3"
 import lottery from "./local_contract_copy"
+import "./App.css"
 class App extends Component{
 
 state = {
