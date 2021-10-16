@@ -19,9 +19,8 @@ const deploy = async () => {
   const result = await new web3.eth.Contract(abi)
     .deploy({ data: bytecode })
     .send({ from: accounts[0], gas: 1000000 });
-
-    console.log(result.options.address);
-    console.log(abi);
+    
+    console.log("add =", result.options.address);
 };
 deploy();
 

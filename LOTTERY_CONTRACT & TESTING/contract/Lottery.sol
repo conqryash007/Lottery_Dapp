@@ -20,7 +20,7 @@ contract Lottery{
         return uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp,player.length)));
     }
     
-    function pickWinner() public restricted{
+    function pickWinner() public payable{
         uint index = random()%player.length;
         player[index].transfer(address(this).balance);//according to changes in v0.5.0
         player = new address payable[](0);
