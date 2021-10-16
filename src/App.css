@@ -1,6 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap");
 * {
   margin: 0;
 }
 body {
-  background-color: rebeccapurple;
+  background: #4e54c8;
+}
+h1,
+form,
+p,
+button {
+  margin: 5px;
+}
+button,
+input {
+  background-color: rgba(255, 255, 255, 0.534);
+  border-radius: 10px;
+  padding: 3px;
+  transition: 0.2s;
+}
+.hov:hover {
+  background-color: black;
+  transform: scale(1.05);
+}
+h1 {
+  text-decoration: underline;
+}
+.main {
+  color: rgba(255, 255, 255, 0.904);
+  font-family: "Noto Sans Mono", monospace;
+  display: flex;
+  width: 50vw;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.459);
+  margin: auto;
+  padding: 6vh;
+  margin-top: 2%;
+  border-radius: 20px;
+  overflow: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .main {
+    width: 90vw;
+    padding: 2vh;
+    height: 70vh;
+    justify-content: center;
+  }
 }
