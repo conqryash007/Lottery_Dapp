@@ -16,16 +16,15 @@ input {
   background-color: rgba(255, 255, 255, 0.534);
   border-radius: 10px;
   padding: 3px;
-  transition: 0.2s;
 }
 .hov:hover {
-  background-color: black;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 h1 {
   text-decoration: underline;
 }
 .main {
+  z-index: 1;
   color: rgba(255, 255, 255, 0.904);
   font-family: "Noto Sans Mono", monospace;
   display: flex;

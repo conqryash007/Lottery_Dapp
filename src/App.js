@@ -2,7 +2,6 @@ import React,{Component} from "react";
 import web3 from "./web3"
 import lottery from "./local_contract_copy"
 import "./App.css"
-import "./Bg.css"
 class App extends Component{
 
 state = {
@@ -40,20 +39,6 @@ state = {
     render(){
         return (
           <div>
-<div className="area" >
-            <ul className="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-            </ul>
-
         <div className = "main">
           <h1>Lottery</h1>
           <p>This lottery is managed by {this.state.manager}</p>
@@ -70,7 +55,6 @@ state = {
           <button className="hov" type = "button" onClick={this.pickWinner}>Pick Winner</button>
           <p>{this.state.message}</p>
         </div>
-        </div >
         </div>)
     }
 }
